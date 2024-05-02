@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./components/pages/Layout";
+import LoginForm from "./components/pages/LoginForm";
 import BasicReactHooks from "./components/pages/BasicReactHooks";
 import CRUD from "./components/pages/CRUD";
 import DataDisplay from "./components/pages/DataDisplay";
@@ -16,21 +17,23 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<LoginForm />} />
         
-        <Route path="/" element={<Layout />}>
           <Route path="/BasicReactHooks" element={<BasicReactHooks />} />
           <Route path="/CRUD" element={<CRUD />} />
           <Route path="/DataDisplay" element={<DataDisplay />} />
           <Route path="/DataManipulation" element={<DataManipulation />} />
           <Route path="/DataSelection" element={<DataSelection />} />
-          {/* <Route path="/Forms" element={<Forms />} /> */}
           <Route path="/ImageHandling" element={<ImageHandling />} />
+          
           <Route
             path="/MasterReactRouterDOM"
             element={<MasterReactRouterDOM />}
           />
+          
           <Route path="/StatePropagation" element={<StatePropagation />} />
           <Route path="/Styling" element={<Styling />} />
+          <Route path="/Layout" element={<Layout />}>
         </Route>
       </Routes>
     </BrowserRouter>
