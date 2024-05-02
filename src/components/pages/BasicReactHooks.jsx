@@ -2,7 +2,7 @@ import React from 'react'
 
 const BasicReactHooks = () => {
   return (
-    <div>BasicReactHooks</div>
+    <div>Why are you not visible?</div>
   )
 }
 
