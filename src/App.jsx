@@ -18,22 +18,22 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LoginForm />} />
-        
-          <Route path="/BasicReactHooks" element={<BasicReactHooks />} />
-          <Route path="/CRUD" element={<CRUD />} />
-          <Route path="/DataDisplay" element={<DataDisplay />} />
-          <Route path="/DataManipulation" element={<DataManipulation />} />
-          <Route path="/DataSelection" element={<DataSelection />} />
-          <Route path="/ImageHandling" element={<ImageHandling />} />
+        <Route path="/Layout" element={<Layout />}>
+          <Route path="/Layout/BasicReactHooks" element={<BasicReactHooks />} />
+          <Route path="/Layout/CRUD" element={<CRUD />} />
+          <Route path="/Layout/DataDisplay" element={<DataDisplay />} />
+          <Route path="/Layout/DataManipulation" element={<DataManipulation />} />
+          <Route path="/Layout/DataSelection" element={<DataSelection />} />
+          <Route path="/Layout/ImageHandling" element={<ImageHandling />} />
           
           <Route
-            path="/MasterReactRouterDOM"
+            path="/Layout/MasterReactRouterDOM"
             element={<MasterReactRouterDOM />}
           />
           
-          <Route path="/StatePropagation" element={<StatePropagation />} />
-          <Route path="/Styling" element={<Styling />} />
-          <Route path="/Layout" element={<Layout />}>
+          <Route path="/Layout/StatePropagation" element={<StatePropagation />} />
+          <Route path="/Layout/Styling" element={<Styling />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>
