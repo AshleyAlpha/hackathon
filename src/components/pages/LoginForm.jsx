@@ -7,17 +7,19 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
 
   const handleEmailChange = (e) => {
-    setEmail(e.target.value);
+    const newEmail = e.target.value;
+    console.log("Email:", newEmail);
+    setEmail(newEmail);
   };
 
   const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
+    const newPassword = e.target.value;
+    console.log("Password:", newPassword);
+    setPassword(newPassword);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Email:", email);
-    console.log("Password:", password);
     navigate("/Layout");
   };
 
