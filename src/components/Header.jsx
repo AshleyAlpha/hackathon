@@ -21,9 +21,9 @@ const Header = () => {
         <NavLink to="/Layout/DataSelection" className="text-cyan-100">
           DSelec
         </NavLink>
-        {/* <NavLink to="/Forms" className="text-cyan-100">
+        <NavLink to="/Layout/Forms" className="text-cyan-100">
           Forms
-        </NavLink> */}
+        </NavLink>
         <NavLink to="/Layout/ImageHandling" className="text-cyan-100">
           ImgHand
         </NavLink>

@@ -7,7 +7,7 @@ import CRUD from "./components/pages/CRUD";
 import DataDisplay from "./components/pages/DataDisplay";
 import DataManipulation from "./components/pages/DataManipulation";
 import DataSelection from "./components/pages/DataSelection";
-// import Forms from "./components/pages/Forms";
+import Forms from "./components/pages/Forms ";
 import ImageHandling from "./components/pages/ImageHandling";
 import MasterReactRouterDOM from "./components/pages/MasterReactRouterDOM";
 import StatePropagation from "./components/pages/StatePropagation";
@@ -24,6 +24,7 @@ function App() {
           <Route path="/Layout/DataDisplay" element={<DataDisplay />} />
           <Route path="/Layout/DataManipulation" element={<DataManipulation />} />
           <Route path="/Layout/DataSelection" element={<DataSelection />} />
+          <Route path="/Layout/Forms" element={<Forms />} />
           <Route path="/Layout/ImageHandling" element={<ImageHandling />} />
           
           <Route
